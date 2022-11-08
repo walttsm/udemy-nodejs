@@ -1,0 +1,22 @@
+{
+  "name": "udemy_nodejs",
+  "version": "1.0.0",
+  "description": "Portal de notícias do curso da udemy de nodejs",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walttsm/udemy-nodejs.git"
+  },
+  "author": "Walter Schmidt Marinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walttsm/udemy-nodejs/issues"
+  },
+  "homepage": "https://github.com/walttsm/udemy-nodejs#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
