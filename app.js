@@ -1,20 +1,10 @@
 var app = require("./config/server");
 
-app.get('/', function (req, res) {
-    res.render("home/index.ejs")
-});
+var rotaHome = require("./app/routes/home")(app);
 
-app.get('/formulario_inclusao_noticia', function (req, res) {
-    res.render("admin/form_add_noticia");
-});
+var rotaNoticias = require("./app/routes/noticias")(app);
 
-app.get('/noticias', (req, res) =>
-    res.render("noticias/noticias")
-);
-
-app.get('/beleza', (req, res) =>
-    res.send("<html><body>Notícias de beleza</body></html>")
-);
+var rotaFormularioInclusaoNoticia = require("./app/routes/formulario_inclusao_noticia")(app);
 
 app.listen(8888, function () {
     console.log("Servidor iniciado");
