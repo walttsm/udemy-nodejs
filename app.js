@@ -1,5 +1,7 @@
 const express = require('express');
 
+var msg = require('./mod_teste')();
+
 var app = express();
 app.set('view engine', 'ejs');
 
@@ -20,5 +22,5 @@ app.get('/beleza', (req, res) =>
 );
 
 app.listen(8888, function () {
-    console.log("Servidor iniciado!!");
+    console.log(msg);
 });
